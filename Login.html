@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <script type="text/javascript">
+          function validation()
+          {
+              var name=document.f1.name.value;
+              var pass1=document.f1.pass1.value;
+              
+              if(name=="")
+              {
+                  alert("enter your name");
+                  document.f1.name.focus();
+                  return false;
+              }
+    
+              if(pass1=="")
+               {
+         	    alert("plesase enter password");
+         	    document.f1.pass1.focus();
+         	    return false;
+             }
+          }
+    </script>
+  <style>
+     .button {
+  /* padding: 15px 25px; */
+  /* font-size: 24px; */
+  text-align: center;
+  cursor: pointer;
+  /* outline: none; */
+  color: #fff;
+  background-color:#609;
+  border: none;
+  border-radius: 15px;
+  /* box-shadow: 0 9px #999; */
+}
+
+.button:hover {background-color: green}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+  </style>
+</head>
+<body class="back1" background="">
+    <div style="margin-top: 50px;"></div>
+    <form name="f1" method="post" action="p2.html" onsubmit=" return validation();">
+    <div style="height: 530px; width: 450px; background-color:rgba(0, 0, 0, 0.178); margin-left: 33%;">
+        <div style="text-align: center;" >
+            <br>
+            <!-- <img src="IMAGES/logo1.png" style="width: 100px;"> -->
+            <h1>SIGHUP</h1>
+            <h3 style="color: lightslategray;" >Please enter your Email & Password</h3>
+            <br>
+            
+            
+        </div>
+      
+
+        
+             <div style="margin-left: 50px;">
+                 <!-- <label style="font-family: 'Courier New', Courier, monospace; font-size: large; font-weight: bold;">Username:-</label> -->
+                 <input type="text" name="name"  placeholder="USERNAME" style="margin-left: 35px; background-color:#d4f1f9;  border-radius: 35px ;
+                 border: 2px solid green;  padding: 20px; width: 200px;height: 5px; text-align: center; ">
+             </div>
+             <br>
+             <br>
+            
+             <div style="margin-left: 50px;">
+                <input type="password" name="pass1" placeholder="PASSWORD" style="margin-left: 35px; background-color: #d4f1f9; text-align: center; border-radius: 35px  ; border: 2px solid green;  padding: 20px; width: 200px;height: 5px;  ">
+            </div>
+            <br>
+            <br>
+            
+            <button class="button" style="margin-left: 30%; border-radius: 15px 50px; width: 150px; height: 30px; "><b>LOGIN</b></button>
+            <br>
+            <div class="new"> <h3 style="margin-left: 15%; ">Create a new Acount <a href="Registration.html"><b style="font-style: italic; " class="reg"> click hear</b>  </a> </h3>   </div>
+
+</div>
+</form>
+</body>
+</html>
